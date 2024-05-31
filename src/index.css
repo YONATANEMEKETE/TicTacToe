@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --font-all: '"Freeman", sans-serif';
+  color-scheme: 'dark';
+}
+
+@layer base {
+  body {
+    @apply text-base text-white box-border border-none outline-none;
+  }
+  /* body {
+    background-color: #070f2b;
+  } */
+}
+
+/* html {
+  background-color: #070f2b;
+} */
