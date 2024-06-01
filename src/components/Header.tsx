@@ -4,10 +4,12 @@ import { IoMoonOutline } from 'react-icons/io5';
 
 interface HeaderProp {
   handleReset?: () => void;
+  className?: string;
+  handledark?: () => void;
 }
-const Header = ({ handleReset }: HeaderProp) => {
+const Header = ({ handleReset, className, handledark }: HeaderProp) => {
   return (
-    <div className="bg-n1 w-full h-[7rem] fixed top-0 left-0">
+    <div className={`${className || ''} w-full h-[7rem] fixed top-0 left-0`}>
       <div className="mx-auto max-w-[950px] h-full flex items-center justify-between">
         <div className="text-[5rem] font-all text-n3 font-bold">
           <span className="text-n2 mr-2">X</span>O
@@ -30,7 +32,7 @@ const Header = ({ handleReset }: HeaderProp) => {
               className="text-[2rem] px-2 py-2 rounded-full bg-n4 border border-slate-600 
             cursor-pointer text-n2  hover:text-slate-100 hover:shadow-border transition-colors duration-200"
             >
-              <IoMoonOutline />
+              <IoMoonOutline onClick={handledark} />
             </div>
           </div>
         </nav>

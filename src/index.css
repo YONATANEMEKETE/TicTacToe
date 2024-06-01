@@ -6,16 +6,16 @@
 
 :root {
   --font-all: '"Freeman", sans-serif';
-  color-scheme: 'dark';
 }
 
 @layer base {
   body {
     @apply text-base text-white box-border border-none outline-none;
   }
-  /* body {
-    background-color: #070f2b;
-  } */
+
+  * {
+    @apply transition-colors duration-200;
+  }
 }
 
 /* html {
