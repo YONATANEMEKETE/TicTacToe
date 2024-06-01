@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 interface ButtonProps {
   child: string;
@@ -10,12 +11,12 @@ interface ButtonProps {
 const Button = ({ child, className, to, reset }: ButtonProps) => {
   const Link = () => {
     return (
-      <a
-        href={to}
+      <NavLink
+        to="/about"
         className={`${className || ''}  text-lg px-8 py-2 rounded-md`}
       >
         {child}
-      </a>
+      </NavLink>
     );
   };
 

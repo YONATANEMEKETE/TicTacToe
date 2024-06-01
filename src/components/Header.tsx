@@ -3,7 +3,7 @@ import Button from './Button';
 import { IoMoonOutline } from 'react-icons/io5';
 
 interface HeaderProp {
-  handleReset: () => void;
+  handleReset?: () => void;
 }
 const Header = ({ handleReset }: HeaderProp) => {
   return (
