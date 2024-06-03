@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaArrowLeftLong } from 'react-icons/fa6';
 import Header from './Header';
 import { NavLink } from 'react-router-dom';
